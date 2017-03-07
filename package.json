@@ -1,0 +1,32 @@
+{
+  "name": "benchlogger",
+  "version": "1.0.0",
+  "description": "bench logger",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "firebase": "^3.7.0",
+    "firebaseui": "^1.0.0"
+  },
+  "devDependencies": {
+    "firebase-server": "^0.9.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hollc/benchlogger.git"
+  },
+  "keywords": [
+    "bench",
+    "logger",
+    "tracker"
+  ],
+  "author": "Chad Holl",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/hollc/benchlogger/issues"
+  },
+  "homepage": "https://github.com/hollc/benchlogger#readme"
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Bench Press Tracker Login</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link href="app-services/app.css" rel="stylesheet" />
+</head>
+    
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+               <div ng-view> </div>
+               
+                
+            </div>
+        </div>
+    </div>
+    <div class="credits text-center">
+        <p>
+            <a> Bench Tracker</a>
+        </p>
+        <p>
+            <a href="https://recsports.osu.edu/">osu.recsports.edu</a>
+        </p>
+    </div>
+	
+	
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCoBOBWk1jTEXHcNURA1YVu4dPN3xxjzIQ",
+    authDomain: "benchtracker-9c945.firebaseapp.com",
+    databaseURL: "https://benchtracker-9c945.firebaseio.com",
+    storageBucket: "benchtracker-9c945.appspot.com",
+    messagingSenderId: "310848608421"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+
+<!-- <script src="node_modules/firebaseui/dist/firebaseui.js"></script> 
+<link type="text/css" rel="stylesheet" href="node_modules/firebaseui/dist/firebaseui.css" /> -->
+
+<!--
+<script src="/node_modules/angular-animate/angular-animate.js"></script>
+<script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
+-->
+
+<script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
+<script src="https://cdn.firebase.com/js/simple-login/1.6.2/firebase-simple-login.js"></script>
+
+
+  <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-route.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-cookies.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="app-services/authentication_service.js"></script>
+    <script src="app-services/flash.service.js"></script>
+
+    <!-- Real user service that uses an api -->
+    <!-- <script src="app-services/user.service.js"></script> -->
+
+    <!-- Fake user service for demo that uses local storage -->
+    <script src="app-services/user_service_local-storage.js"></script>
+
+    <script src="home/home_controller.js"></script>
+    <script src="login/login_controller.js"></script>
+    <script src="register/register_controller.js"></script>
+</body>
+</html>
